@@ -136,7 +136,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style='md')
-    msg = "**Now Playing** in {} 👻.⚪Pᴏᴡᴇʀᴇᴅ Bʏ σxү x мυsιc ❤️".format(message.chat.title)
+    msg = "**Now Playing** in {} 👻.⚪Pᴏᴡᴇʀᴇᴅ Bʏ Ɲօҍí X Ɱմsíϲ ❤️".format(message.chat.title)
     msg += "\n- "+ now_playing
     msg += "\n- Req by "+by
     temp.pop(0)
@@ -242,7 +242,7 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style='md')
-        msg = "**Now Playing** in {} via OxyXmusic".format(cb.message.chat.title)
+        msg = "**Now Playing** in {} via Ɲօҍí X Ɱմsíϲ".format(cb.message.chat.title)
         msg += "\n- "+ now_playing
         msg += "\n- Req by "+by
         temp.pop(0)
@@ -358,7 +358,7 @@ async def m_cb(b, cb):
                 
                 ],
                 [       
-                    InlineKeyboardButton("❌ Close",'cls')
+                    InlineKeyboardButton("❌ 𝐂𝐋𝐎𝐒𝐄",'cls')
                 ]        
             ]
         )
@@ -399,14 +399,14 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "@Music_op_bot"
+        user.first_name =  "@NoBi_vC_PlAyEr_RoBoT"
     usar = user
     wew = usar.id
     try:
@@ -419,7 +419,7 @@ async def play(_, message: Message):
                               invitelink = await _.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Add me as admin of yor group first 👀</b>",
+                                  "<b>Admin To Bana Lwade 😒</b>",
                               )
                               return
 
@@ -427,7 +427,7 @@ async def play(_, message: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@Music_op_bot userbot joined your chat</b>",
+                                  "<b>@NoBi_vC_PlAyEr_RoBoT userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -436,7 +436,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @Music_op_bot to your Group and try again</b>",
+                                  "\n\nOr manually add @NoBi_vC_PlAyEr_RoBoT to your Group and try again</b>",
                               )
                               pass
     try:
@@ -444,7 +444,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> @Music_op_bot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i> @NoBi_vC_PlAyEr_RoBoT Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -460,7 +460,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("🎵 **𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -484,8 +484,8 @@ async def play(_, message: Message):
             [   
                 [
                                
-                    InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
-                    InlineKeyboardButton('Menu ⏯ ', callback_data='menu')
+                    InlineKeyboardButton('📖 𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓', callback_data='playlist'),
+                    InlineKeyboardButton('𝐌𝐄𝐍𝐔 ⏯ ', callback_data='menu')
                 
                 ],                     
                 [
@@ -496,7 +496,7 @@ async def play(_, message: Message):
                 ],
                 [       
                     InlineKeyboardButton(
-                        text="❌ Close",
+                        text="❌ 𝐂𝐋𝐎𝐒𝐄",
                         callback_data='cls')
 
                 ]                             
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption= "Now Playing** in {} 👻 via OxyXmusic".format(            
+        caption= "Now Playing** in {} 👻 via Ɲօҍí X Ɱմsíϲ".format(            
         message.from_user.mention()
         ),
     )
@@ -548,13 +548,13 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "OxyXmusic"
+        user.first_name =  "Ɲօҍí X Ɱմsíϲ"
     usar = user
     wew = usar.id
     try:
@@ -575,7 +575,7 @@ async def deezer(client: Client, message_: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message_.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@Music_op_bot userbot joined your chat</b>",
+                                  "<b>@NoBi_vC_PlAyEr_RoBoT userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -584,7 +584,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @Music_op_bot to your Group and try again</b>",
+                                  "\n\nOr manually add @NoBi_vC_PlAyEr_RoBoT to your Group and try again</b>",
                               )
                               pass
     try:
@@ -592,7 +592,7 @@ async def deezer(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Looks like @Music_op_bot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i>Looks like @NoBi_vC_PlAyEr_RoBoT Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return                            
     requested_by = message_.from_user.first_name   
@@ -618,8 +618,8 @@ async def deezer(client: Client, message_: Message):
     keyboard = InlineKeyboardMarkup(
          [   
              [
-                 InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
-                 InlineKeyboardButton('Menu ⏯ ', callback_data='menu')     
+                 InlineKeyboardButton('📖 𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓', callback_data='playlist'),
+                 InlineKeyboardButton('𝐌𝐄𝐍𝐔 ⏯ ', callback_data='menu')     
              ],                     
              [
                  InlineKeyboardButton(
@@ -629,7 +629,7 @@ async def deezer(client: Client, message_: Message):
              ],
              [       
                  InlineKeyboardButton(
-                     text="❌ Close",
+                     text="❌ 𝐂𝐋𝐎𝐒𝐄",
                      callback_data='cls')
 
             ]                      
@@ -647,9 +647,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"✯OxyXmusic✯=#️⃣ Queued at position {position}")
+        await res.edit_text(f"✯Ɲօҍí X Ɱմsíϲ✯=#️⃣ Queued at position {position}")
     else:
-        await res.edit_text("✯OxyXmusic✯=▶️ Playing.....")
+        await res.edit_text("✯Ɲօҍí X Ɱմsíϲ✯=▶️ 𝐏𝐋𝐀𝐘𝐈𝐍𝐆.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -678,13 +678,13 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "OxyXmusic"
+        user.first_name =  "Ɲօҍí X Ɱմsíϲ"
     usar = user
     wew = usar.id
     try:
@@ -705,7 +705,7 @@ async def jiosaavn(client: Client, message_: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message_.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@Music_op_bot helper userbot joined your chat</b>",
+                                  "<b>@NoBi_vC_PlAyEr_RoBoT helper userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -714,7 +714,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @Music_op_bot to your Group and try again</b>",
+                                  "\n\nOr manually add @NoBi_vC_PlAyEr_RoBoT to your Group and try again</b>",
                               )
                               pass
     try:
@@ -722,7 +722,7 @@ async def jiosaavn(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> @Music_op_bot helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            "<i> @NoBi_vC_PlAyEr_RoBoT helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     requested_by = message_.from_user.first_name
@@ -752,8 +752,8 @@ async def jiosaavn(client: Client, message_: Message):
     keyboard = InlineKeyboardMarkup(
          [   
              [
-               InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
-               InlineKeyboardButton('Menu ⏯ ', callback_data='menu')   
+               InlineKeyboardButton('📖 𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓', callback_data='playlist'),
+               InlineKeyboardButton('𝐌𝐄𝐍𝐔 ⏯ ', callback_data='menu')   
              ],                     
              [
                InlineKeyboardButton(
@@ -762,7 +762,7 @@ async def jiosaavn(client: Client, message_: Message):
              ],
              [       
                InlineKeyboardButton(
-                   text="❌ Close",
+                   text="❌ 𝐂𝐋𝐎𝐒𝐄",
                    callback_data='cls')
 
             ]                          
@@ -782,12 +782,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯OxyXmusic✯=#️⃣ Queued at position {position}",
+            caption=f"✯Ɲօҍí X Ɱմsíϲ✯=#️⃣ Queued at position {position}",
         
         )           
            
     else:
-        await res.edit_text("✯OxyXmusic✯=▶️ Playing.....")
+        await res.edit_text("✯Ɲօҍí X Ɱմsíϲ✯=▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
