@@ -54,7 +54,7 @@ async def ytsearch(_, message: Message):
             text += f"➼ Channel - {results[i]['channel']}\n"
             text += f"➼ https://youtube.com{results[i]['url_suffix']}\n\n"
             text += f"    ╰───────•◈•───────╯\n"
-            text += f"    𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 𝘊𝘰𝘧𝘧𝘪𝘯𝘟𝘮𝘶𝘴𝘪𝘤❤️\n"
+            text += f"    𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 Ɲօҍí X Ɱմsíϲ❤️\n"
             i += 1
         await m.edit(text, disable_web_page_preview=True)
     except Exception as e:
