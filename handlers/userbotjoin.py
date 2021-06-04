@@ -13,14 +13,14 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Add me as admin of yor group first 😶</b>",
+            "<b>Admin To Bana Lawde 😶</b>",
         )
         return
 
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "OxyXmusic"
+        user.first_name =  "Ɲօҍí X Ɱմsíϲ"
 
     try:
         await USER.join_chat(invitelink)
@@ -33,11 +33,11 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-            "\n\nOr manually add @Oxy_VC to your Group and try again</b>",
+            "\n\nOr manually add @NoBi_Vc_PlAyEr to your Group and try again</b>",
         )
         return
     await message.reply_text(
-            "<b>helper userbot joined your chat 👻</b>",
+            "<b>Agya Bhai Baja Raha Hu Song Ab ❤</b>",
         )
     
 @USER.on_message(filters.group & filters.command(["userbotleave"]))
