@@ -16,7 +16,7 @@ async def start_(client: Client, message: Message):
 And Also I Can Manage Ur Group.. ❤️
 \nTo add in your group contact us at @OxyXsupport.
 \nUse the buttons below to know more about me.
-\nContact my owner :- @FallenAngel_xD
+\nContact my owner :- @DesiNobita 
  </b>""",
       
        
@@ -24,23 +24,23 @@ And Also I Can Manage Ur Group.. ❤️
             [
                 [
                     InlineKeyboardButton(
-                        "⚪ Support Group ⚪", url="https://t.me/OxyXsupport",
+                        "⚜ Support Group ⚜", url="https://t.me/cartoons_007",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚪ Channel ⚪", url="https://t.me/OxyXupdates"
+                        "💥 Channel 💥", url="https://t.me/desichannelz"
                     ),
                     InlineKeyboardButton(
-                        "⚪ Owner ⚪", url="https://t.me/FallenAngel_xD"
+                        "🔥 Owner 🔥", url="https://t.me/DesiNobita"
                     ),
                     InlineKeyboardButton(
-                        "⚪ Assistant ⚪", url="https://t.me/Oxy_VC?startgroup=true"
+                        "❤ Assistant ❤", url="https://t.me/NoBi_Vc_PlAyEr?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Music_op_bot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/NoBi_vC_PlAyEr_RoBoT?startgroup=true"
                     ) 
                 ]
             ]
@@ -54,7 +54,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/OxyXupdates"
+                        "🔊 Channel", url="https://t.me/desichannelz"
                     )
                 ],[
                     InlineKeyboardButton(
@@ -76,7 +76,7 @@ async def gstart(_, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Here Is Cmd Of OxyXmusic !
+        f"""<b>Here Is Cmd Of Ɲօҍí X Ɱմsíϲ !
 ╔━━━━━━━━⊰✦⊱━━━━━━━━╗
 \n/play <song name> - play song you requested
 /dplay <song name> - play song you requested via deezer
@@ -102,14 +102,14 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/OxyXupdates"
+                        "🔊 Channel", url="https://t.me/desichannelz"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "🚑 Support Group", url="https://t.me/OxyXsupport"
+                        "🚑 Support Group", url="https://t.me/cartoons_007"
                     ),
                     InlineKeyboardButton(
-                        "➕Add OxyX in your group➕", url="https://t.me/Music_op_bot?startgroup=true"
+                        "➕Add OxyX in your group➕", url="https://t.me/NoBi_vC_PlAyEr_RoBoT?startgroup=true"
                     )
                 ]
             ]
