@@ -8,7 +8,7 @@
   <img src="https://telegra.ph/file/aeac9984a2bc0efb69ed9.jpg">
 </p>
 
-<h2> Whats new 🔥 </h2>
+<summary> • Whats new 🔥 • </summary>
 
 - Thumbnail Support
 - Playlist Support
