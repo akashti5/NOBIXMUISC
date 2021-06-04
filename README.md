@@ -10,15 +10,7 @@
 
 <summary> • Whats new 🔥 • </summary>
 
-- Thumbnail Support
-- Playlist Support
-- Current playback support
-- Showing track names when skipping
-- Zero downtime, Fully Stable
-- DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
-- Settings panel
-- Control with buttons
-- Userbot auto join
+<h2 align="center"> <a href= <h2 align="center"> <a href= - Thumbnail Support <h2 align="center"> <a href= - Playlist Support <h2 align="center"> <a href= - Current playback support <h2 align="center"> <a href= - Showing track names when skipping <h2 align="center"> <a href= - Zero downtime, Fully Stable <h2 align="center"> <a href= - DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED <h2 align="center"> <a href= - Settings panel <h2 align="center"> <a href= - Control with buttons <h2 align="center"> <a href= - Userbot auto join
 
 ### Commands 🛠
 #### For all in group
