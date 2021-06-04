@@ -15,11 +15,11 @@ from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(command("ply") & other_filters)
+@Client.on_message(command("aud") & other_filters)
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆**")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -27,8 +27,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🔥𝕐𝖔𝖚𝖗 - 𝕯𝖆𝖉𝖉𝕪🔥",
-                        url="https://t.me/FallenAngel_xD")
+                        text="🔥[देसी ΝϴᏴᏆͲᎪ]🔥",
+                        url="https://t.me/DesiNobita")
                    
                 ]
             ]
@@ -40,7 +40,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ {DURATION_LIMIT} minute(s) se bada video..😮 mai nhi play karta ja..🙄"
+                f"❌ {DURATION_LIMIT} mere land se bada video..😮 mai nhi play karta ja..🙄"
             )
 
         file_name = get_file_name(audio)
@@ -51,7 +51,7 @@ async def play(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("❗ Abey play karne kuch de to sahi noob 😂")
+        return await lel.edit_text("❗ Abey Kya Play Karu Teri GF Ki Recordings ? 😂")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
@@ -59,7 +59,7 @@ async def play(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-        photo="https://telegra.ph/file/fa90d4ed2fac4f5300d76.jpg",
+        photo="https://telegra.ph/file/dda3be3c41d3d7d2f3799.jpg",
         reply_markup=keyboard,
         caption="▶️ **Playing** here the song requested by🔥{}!".format(
         message.from_user.mention()
