@@ -1,9 +1,9 @@
 {
-    "name": "𝙊𝙓𝙔 𝙓 𝙈𝙐𝙎𝙄𝘾",
-    "logo": "https://telegra.ph/file/aeac9984a2bc0efb69ed9.jpg",
+    "name": "Ɲօҍí X Ɱմsíϲ",
+    "logo": "https://telegra.ph/file/9ab923d7fc7323bfa9f26.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
-    "repository": "https://github.com/OxyNotOp/OxyMusic",
+    "repository": "https://github.com/akashti5/NOBIXMUISC",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
