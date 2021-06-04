@@ -1,11 +1,11 @@
-<h1 align="centre">𝙊𝙓𝙔 𝙓 𝙈𝙐𝙎𝙄𝘾 🎵</h1>
+<h1 align="centre"> Ɲօҍí X Ɱմsíϲ 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
-# Available on telegram as @Music_op_bot
+# Available on telegram as @NoBi_vC_PlAyEr_RoBoT
 
 <p align="center">
-  <img src="https://telegra.ph/file/aeac9984a2bc0efb69ed9.jpg">
+  <img src="https://telegra.ph/file/62ab0df0a0949fa7e4626.jpg">
 </p>
 
 <summary> • Whats new 🔥 • </summary>
