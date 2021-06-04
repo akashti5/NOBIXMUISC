@@ -36,7 +36,7 @@
 - `/userbotjoin` - invite assistant to your chat
 - `/admincache` - Refresh admin list
 
-#### Based on Callsmusic-1
+#### Based on Authorized Anime-1
 
 ### Deploy To Heroku</h4>
 
