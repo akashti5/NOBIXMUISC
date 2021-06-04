@@ -26,6 +26,8 @@
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
       "required": true
+    }.
+     "
     },
     "SUDO_USERS": {
       "description": "List of user IDs counted as admin everywhere (separated by space).",
